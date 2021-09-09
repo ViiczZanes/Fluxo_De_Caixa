@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <!--<title> Responsive Sidebar Menu  | CodingLab </title>-->
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/modal.css">
+    <link rel="stylesheet" href="../style/sidebar.css">
+    <link rel="stylesheet" href="../style/cores.css">
+    <link rel="stylesheet" href="../style/table.css">
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/table.js"></script>
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    
+
+
+
+    <!-- Slidebar inicio -->
+    <div class="sidebar open" onmouseover="open_nav()" onmouseout="close_nav()">
+        <div class="logo-details">
+            <i class='bx bx-money icon rainbow'></i>
+            <div class="logo_name">Finanças</div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav-list">
+            <li>  
+                <a class="alt_color" href="./Dashboard.html">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+                <a class="alt_color" href="./Fornecedores.html">
+                    <i class='bx bx-user'></i>
+                    <span class="links_name">Fornecedores</span>
+                </a>
+                <span class="tooltip">Fornecedores</span>
+            </li>
+            <li>
+                <a class="alt_color" href="./Dividendos.html">
+                    <i class='bx bxs-id-card'></i>
+                    <span class="links_name">Dividendos</span>
+                </a>
+                <span class="tooltip">Dividendos</span>
+            </li>
+            <li>
+                <a class="alt_color" href="#">
+                    <i class='bx bx-trending-up'></i>
+                    <span class="links_name">Lucro</span>
+                </a>
+                <span class="tooltip">Lucro</span>
+            </li>
+
+            <li>
+                <a class="alt_color" href="./Gastos.html">
+                    <i class='bx bx-trending-down'></i>
+                    <span class="links_name">Gastos</span>
+                </a>
+                <span class="tooltip">Gastos</span>
+            </li>
+            <li>
+                <a class="alt_color" href="./Graficos.html">
+                    <i class='bx bx-pie-chart-alt-2'></i>
+                    <span class="links_name">Graficos</span>
+                </a>
+                <span class="tooltip">Graficos</span>
+            </li>
+            <li>
+                <a class="alt_color" href="./Config.html">
+                    <i class='bx bx-cog'></i>
+                    <span class="links_name">Config</span>
+                </a>
+                <span class="tooltip">Config</span>
+            </li>
+        </ul>
+    </div>
+    <!-- Slidebar Fim -->
+
+
+    <section class="home-section">
+        <div class="top_bar">Lucro</div>
+        <main>
+            <div class="box_table">
+                <div class="box">
+                    <div id="menu">
+                        <button id="new" onclick="iniciaModal()">
+                            <i class='bx bx-plus-circle btn_ico'></i>
+                            <h3 id="text_new">novo</h3>
+                        </button>
+                        <button id="trash" onclick="gastos.zerar()">
+                            <i class='bx bx-trash btn_ico'></i>
+                        </button>
+                        <button id="edit">
+                            <i class='bx bx-edit btn_ico'></i>
+                        </button>
+                    </div>
+                    <hr id="div">
+                    <div id="contain">
+                        <table class="styled-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Descrição</th>
+                                    <th>Valor</th>
+                                    <th>Vencimento</th>
+                                    <th>Metodo de Pagamento</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbody">
+                                <tr>
+                                    <td>1</td>
+                                    <td>Aluguel</td>
+                                    <td>R$ 2500,00</td>
+                                    <td>07/09/21</td>
+                                    <td>Cartão</td>
+                                </tr>
+                                <tr class="active-row">
+                                    <td>2</td>
+                                    <td>Conta Luz</td>
+                                    <td>R$ 5150,00</td>
+                                    <td>25/10/21</td>
+                                    <td>Dinheiro</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Aluguel</td>
+                                    <td>R$ 2500,00</td>
+                                    <td>07/09/21</td>
+                                    <td>Cartão</td>
+                                </tr>
+                                <tr class="active-row">
+                                    <td>4</td>
+                                    <td>Conta Luz</td>
+                                    <td>R$ 5150,00</td>
+                                    <td>25/10/21</td>
+                                    <td>Dinheiro</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Aluguel</td>
+                                    <td>R$ 2500,00</td>
+                                    <td>07/09/21</td>
+                                    <td>Cartão</td>
+                                </tr>
+                                <tr class="active-row">
+                                    <td>2</td>
+                                    <td>Conta Luz</td>
+                                    <td>R$ 5150,00</td>
+                                    <td>25/10/21</td>
+                                    <td>Dinheiro</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Aluguel</td>
+                                    <td>R$ 2500,00</td>
+                                    <td>07/09/21</td>
+                                    <td>Cartão</td>
+                                </tr>
+                                <tr class="active-row">
+                                    <td>4</td>
+                                    <td>Conta Luz</td>
+                                    <td>R$ 5150,00</td>
+                                    <td>25/10/21</td>
+                                    <td>Dinheiro</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Aluguel</td>
+                                    <td>R$ 2500,00</td>
+                                    <td>07/09/21</td>
+                                    <td>Cartão</td>
+                                </tr>
+                                <tr class="active-row">
+                                    <td>2</td>
+                                    <td>Conta Luz</td>
+                                    <td>R$ 5150,00</td>
+                                    <td>25/10/21</td>
+                                    <td>Dinheiro</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Aluguel</td>
+                                    <td>R$ 2500,00</td>
+                                    <td>07/09/21</td>
+                                    <td>Cartão</td>
+                                </tr>
+                                <tr class="active-row">
+                                    <td>4</td>
+                                    <td>Conta Luz</td>
+                                    <td>R$ 5150,00</td>
+                                    <td>25/10/21</td>
+                                    <td>Dinheiro</td>
+                                </tr>
+                                
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </main>
+
+    </section>
+
+
+
+
+    <!-- modal inicio -->
+
+    <div id="modal_cad" class="modal-container">
+        <div class="modal">
+            <div class="modal_header">
+                <div class="buttons">
+                    <a class="button close"  id="close_btn" onclick="fecharModal('modal_cad')" >X</a>
+                </div>
+            </div>
+            <div class="modal_main">
+                <form>
+                    <input id="descrição" type="text">
+                   <input id="valor"type="number">
+                   <input  id="vencimento" type="date">
+                    <input id="metodoPag" type="text">
+                </form>
+            </div>
+            
+            <div class="modal_footer">
+                <div class="buttons">
+                    
+                    <a class="button retangulo" onclick="ganhos.cancelar()">Cancelar</a>
+                    <a class="button retangulo"href="#" onclick="gastos.salvar()" >Salvar</a>
+                    
+                    
+                </div>
+            </div>
+        </div>
+         
+
+    </div>
+
+
+    <!-- modal fim -->
+
+
+
+
+
+
+
+
+    <script>
+        let sidebar = document.querySelector(".sidebar");
+        let closeBtn = document.querySelector("#btn");
+
+        function open_nav() {
+            sidebar.classList.add("open");
+        }
+        function close_nav() {
+            sidebar.classList.remove("open");
+        }
+
+
+
+    </script>
+
+    <script src="../js/modal.js"></script>
+    <script src="../js/button.js"></script>
+    <script src="../scripts/color.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+.azul{
+    background: linear-gradient(90deg, #025ce3, #4e94fd);
+}
+
+.verde{
+    background: linear-gradient(90deg, #15c561 , #009879);
+  }
+
+  .cinza_claro{
+    background: linear-gradient(90deg, #b7bdd0, #E4E9F7);
+  }
+
+  .cinza_escuro{
+    background: linear-gradient(90deg, #453f49, #565e64);
+  }
