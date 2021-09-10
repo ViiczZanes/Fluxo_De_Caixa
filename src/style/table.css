@@ -11,10 +11,9 @@
   
   
   .styled-table thead tr {
-    background: linear-gradient(90deg, #15c561 , #009879);
     color: #ffffff;
     text-align: left;
-    
+
   }
   
   .styled-table th,

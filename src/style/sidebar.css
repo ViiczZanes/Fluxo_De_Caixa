@@ -124,9 +124,9 @@
     align-items: center;
     text-decoration: none;
     transition: all 0.4s ease;
-    background-color: #007BFF;
-   
   }
+
+
   
   /* Estiliza Botões quando passa mouse por cima ->  */
   .sidebar li a:hover{
@@ -186,18 +186,18 @@
 
 
     @keyframes color-rotate {
-        from {
-            filter: hue-rotate(0deg);
-        }
-        to {
-            filter: hue-rotate(360deg);
-        }
-      }
-      
-      .rainbow {
-        animation: color-rotate 3s;
-        animation-iteration-count: infinite; 
-        animation-direction: alternate;
-      }
-      
+  from {
+      filter: hue-rotate(0deg);
+  }
+  to {
+      filter: hue-rotate(360deg);
+  }
+}
+
+.rainbow {
+  animation: color-rotate 3s;
+  animation-iteration-count: infinite; 
+  animation-direction: alternate;
+}
+
     

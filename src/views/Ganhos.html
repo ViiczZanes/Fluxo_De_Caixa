@@ -10,14 +10,23 @@
     <link rel="stylesheet" href="../style/sidebar.css">
     <link rel="stylesheet" href="../style/cores.css">
     <link rel="stylesheet" href="../style/table.css">
-    <script src="../scripts/main.js"></script>
-    <script src="../scripts/table.js"></script>
+    
+
+
+
+
+
+    <script src="../js/Cor.js"></script>
+    <script src="../js/Onload.js"></script>
+
+
+    
     <!-- Boxicons CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
+<body onload="load()">
     
 
 
@@ -31,28 +40,28 @@
         </div>
         <ul class="nav-list">
             <li>  
-                <a class="alt_color" href="./Dashboard.html">
+                <a class="changeColor padrao" href="./Dashboard.html">
                     <i class='bx bx-grid-alt'></i>
                     <span class="links_name">Dashboard</span>
                 </a>
                 <span class="tooltip">Dashboard</span>
             </li>
             <li>
-                <a class="alt_color" href="./Fornecedores.html">
+                <a class="changeColor padrao" href="./Fornecedores.html">
                     <i class='bx bx-user'></i>
                     <span class="links_name">Fornecedores</span>
                 </a>
                 <span class="tooltip">Fornecedores</span>
             </li>
             <li>
-                <a class="alt_color" href="./Dividendos.html">
+                <a class="changeColor padrao" href="./Dividendos.html">
                     <i class='bx bxs-id-card'></i>
                     <span class="links_name">Dividendos</span>
                 </a>
                 <span class="tooltip">Dividendos</span>
             </li>
             <li>
-                <a class="alt_color" href="#">
+                <a class="changeColor padrao" href="#">
                     <i class='bx bx-trending-up'></i>
                     <span class="links_name">Lucro</span>
                 </a>
@@ -60,21 +69,21 @@
             </li>
 
             <li>
-                <a class="alt_color" href="./Gastos.html">
+                <a class="changeColor padrao" href="./Gastos.html">
                     <i class='bx bx-trending-down'></i>
                     <span class="links_name">Gastos</span>
                 </a>
                 <span class="tooltip">Gastos</span>
             </li>
             <li>
-                <a class="alt_color" href="./Graficos.html">
+                <a class="changeColor padrao" href="./Graficos.html">
                     <i class='bx bx-pie-chart-alt-2'></i>
                     <span class="links_name">Graficos</span>
                 </a>
                 <span class="tooltip">Graficos</span>
             </li>
             <li>
-                <a class="alt_color" href="./Config.html">
+                <a class="changeColor padrao" href="./Config.html">
                     <i class='bx bx-cog'></i>
                     <span class="links_name">Config</span>
                 </a>
@@ -104,9 +113,9 @@
                     </div>
                     <hr id="div">
                     <div id="contain">
-                        <table class="styled-table">
+                        <table class="styled-table" >
                             <thead>
-                                <tr>
+                                <tr class="changeColor padrao">
                                     <th>ID</th>
                                     <th>Descrição</th>
                                     <th>Valor</th>
