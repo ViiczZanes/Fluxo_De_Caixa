@@ -1,0 +1,92 @@
+
+
+.label_theme{
+    margin: 10px;
+    background-color: #E3E3E3 ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    position: relative;
+    padding: 5px;
+    height: 23px;
+    width: 46px;
+    font-size: 18px;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+.checkbox:checked + .label_theme .ball{
+    transform: translateX(21px);
+}
+.ball{
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 23px;
+    width: 23px;
+    transform: scale(0.9);
+    transition: transform 0.3s linear;
+    
+}
+
+.bx-moon{
+    color: #f1c40f;
+}
+
+.bx-sun{
+    color: #f39c12;
+}
+/* Top Bar */
+
+/* Side Bar  */
+.main{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+/* Side Bar  */
+
+
+
+
+
+
+
+.sidebar .profile #log_out.dark{
+    background: #1d1b31;
+}
+
+
+.sidebar li.profile.dark{
+    background: #1d1b31;
+}
+.sidebar li.profile .name.dark,
+.sidebar li.profile .job.dark{
+    color: #fff
+}
+
+.sidebar.dark{
+    background-color:#1d1b31;
+}
+
+.top_bar.dark{
+    background-color:#1d1b31;
+    color: #fff;
+}
+
+.label_theme.dark{
+    background-color: #111 !important;
+}
+
+.home-section.dark{
+    background-color: #15182a;
+}
+
+.sidebar .logo-details .logo_name.dark{
+    color: #fff;
+}
