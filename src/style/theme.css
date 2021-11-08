@@ -90,3 +90,7 @@
 .sidebar .logo-details .logo_name.dark{
     color: #fff;
 }
+
+.container.dark{
+    background-color: #15182a;
+}
