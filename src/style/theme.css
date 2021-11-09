@@ -94,3 +94,7 @@
 .container.dark{
     background-color: #15182a;
 }
+
+html.dark{
+    background-color: #15182A
+}

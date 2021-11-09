@@ -6,7 +6,8 @@
   box-sizing: border-box;
   font-family: "Poppins" , sans-serif;
 }
-body{
+
+html, body{
   background-color: #E4E9F7;
 }
 
@@ -78,7 +79,7 @@ td,th{
   border-radius: 6px;
   border: none;
   color: white;
-  background: linear-gradient(90deg, #15c561 , #009879);
+  background: linear-gradient(90deg, #025ce3, #4e94fd);
 
 }
 
@@ -116,7 +117,7 @@ td,th{
 }
 
 #div{
-  margin-top: 50px;
+  margin-top: 40px;
   color: gray;
   border: 1.5px solid #C4C4C4;
 }

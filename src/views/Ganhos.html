@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" class="theme">
 
 <head>
     <meta charset="UTF-8">
@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../style/theme.css">
 
     <script src="../js/login.js"></script>
+    <script src="../js/onload.js"></script>
 
 
     <!-- Boxicons CDN Link -->
@@ -19,7 +20,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
+<body onload="load('listas')">
 
 
 
@@ -33,7 +34,7 @@
         </div>
         <ul class="nav-list">
             <li>
-                <a class="changeColor padrao" href="./Dashboard.html">
+                <a class="changeColor padrao" href="./Ganhos.html">
                     <i class='bx bx-grid-alt'></i>
                     <span class="links_name">Dashboard</span>
                 </a>
@@ -80,7 +81,9 @@
         <main>
             <div class="box_table">
                 <div class="box">
-                    <div id="menu"></div>
+                    <div id="menu">
+                        <i id="new" onclick="abrirModal()">Novo</i>
+                    </div>
                     <hr id="div">
                     <div id="contain">
                         <table class="styled-table">
@@ -94,92 +97,7 @@
                                 </tr>
                             </thead>
                             <tbody id="tbody">
-                                <tr>
-                                    <td>1</td>
-                                    <td>Aluguel</td>
-                                    <td>R$ 2500,00</td>
-                                    <td>07/09/21</td>
-                                    <td>Cartão</td>
-                                </tr>
-                                <tr class="active-row">
-                                    <td>2</td>
-                                    <td>Conta Luz</td>
-                                    <td>R$ 5150,00</td>
-                                    <td>25/10/21</td>
-                                    <td>Dinheiro</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Aluguel</td>
-                                    <td>R$ 2500,00</td>
-                                    <td>07/09/21</td>
-                                    <td>Cartão</td>
-                                </tr>
-                                <tr class="active-row">
-                                    <td>4</td>
-                                    <td>Conta Luz</td>
-                                    <td>R$ 5150,00</td>
-                                    <td>25/10/21</td>
-                                    <td>Dinheiro</td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Aluguel</td>
-                                    <td>R$ 2500,00</td>
-                                    <td>07/09/21</td>
-                                    <td>Cartão</td>
-                                </tr>
-                                <tr class="active-row">
-                                    <td>2</td>
-                                    <td>Conta Luz</td>
-                                    <td>R$ 5150,00</td>
-                                    <td>25/10/21</td>
-                                    <td>Dinheiro</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Aluguel</td>
-                                    <td>R$ 2500,00</td>
-                                    <td>07/09/21</td>
-                                    <td>Cartão</td>
-                                </tr>
-                                <tr class="active-row">
-                                    <td>4</td>
-                                    <td>Conta Luz</td>
-                                    <td>R$ 5150,00</td>
-                                    <td>25/10/21</td>
-                                    <td>Dinheiro</td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Aluguel</td>
-                                    <td>R$ 2500,00</td>
-                                    <td>07/09/21</td>
-                                    <td>Cartão</td>
-                                </tr>
-                                <tr class="active-row">
-                                    <td>2</td>
-                                    <td>Conta Luz</td>
-                                    <td>R$ 5150,00</td>
-                                    <td>25/10/21</td>
-                                    <td>Dinheiro</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Aluguel</td>
-                                    <td>R$ 2500,00</td>
-                                    <td>07/09/21</td>
-                                    <td>Cartão</td>
-                                </tr>
-                                <tr class="active-row">
-                                    <td>4</td>
-                                    <td>Conta Luz</td>
-                                    <td>R$ 5150,00</td>
-                                    <td>25/10/21</td>
-                                    <td>Dinheiro</td>
-                                </tr>
-
-
+                              
                             </tbody>
                         </table>
                     </div>
@@ -190,7 +108,6 @@
 
 
         </main>
-
     </section>
 
 
@@ -217,8 +134,8 @@
             <div class="modal_footer">
                 <div class="buttons">
 
-                    <a class="button retangulo" onclick="ganhos.cancelar()">Cancelar</a>
-                    <a class="button retangulo" href="#" onclick="gastos.salvar()">Salvar</a>
+                    <a class="button retangulo" onclick="table.cancelar()">Cancelar</a>
+                    <a class="button retangulo" href="#" onclick="table.addArray('listas')">Salvar</a>
 
 
                 </div>
@@ -253,6 +170,25 @@
 
     </script>
 
+
+    <script>
+        function abrirModal(){
+            const modal = document.getElementById('modal_cad')
+            modal.classList.add('mostrar');
+        }
+
+        function fecharModal() {
+            const modal = document.getElementById('modal_cad')
+            modal.classList.remove('mostrar');
+        }
+
+        
+
+    </script>
+
+
+
+    <script src="../js/table.js"></script>
     <script src="../js/theme.js"></script>
     <script src="../js/login.js"></script>
 </body>
