@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../style/cores.css">
     <link rel="stylesheet" href="../style/table.css">
     <link rel="stylesheet" href="../style/theme.css">
+    <link rel="stylesheet" href="../style/index.css">
 
     <script src="../js/login.js"></script>
     <script src="../js/onload.js"></script>
@@ -79,8 +80,8 @@
 
 
         <main>
-            <div class="box_table">
-                <div class="box">
+            <div class="box_table theme">
+                <div class="box theme">
                     <div id="menu">
                         <i id="new" onclick="abrirModal()">Novo</i>
                     </div>
@@ -97,7 +98,7 @@
                                 </tr>
                             </thead>
                             <tbody id="tbody">
-                              
+
                             </tbody>
                         </table>
                     </div>
@@ -119,23 +120,22 @@
         <div class="modal">
             <div class="modal_header">
                 <div class="buttons">
-                    <a class="button close" id="close_btn" onclick="fecharModal('modal_cad')">X</a>
+                    <a class="txtcenter" id="close_btn" onclick="fecharModal('modal_cad')"><h3>X</h3></a>
                 </div>
             </div>
             <div class="modal_main">
                 <form>
-                    <input id="descrição" type="text">
-                    <input id="valor" type="number">
-                    <input id="vencimento" type="date">
-                    <input id="metodoPag" type="text">
+                    <input class="input-padrao" id="descrição" type="text" placeholder="Descrição">
+                    <input class="input-padrao" id="valor" type="number" placeholder="Valor">
+                    <input class="input-padrao" id="vencimento" type="date" placeholder="Vencimento">
+                    <input class="input-padrao" id="metodoPag" type="text" placeholder="Metodo Pagamento">
                 </form>
             </div>
 
             <div class="modal_footer">
                 <div class="buttons">
-
-                    <a class="button retangulo" onclick="table.cancelar()">Cancelar</a>
-                    <a class="button retangulo" href="#" onclick="table.addArray('listas')">Salvar</a>
+                    <a class="button-padrao" onclick="table.cancelar()">Cancelar</a>
+                    <a class="button-padrao" href="#" onclick="table.addArray('listas')">Salvar</a>
 
 
                 </div>
@@ -148,13 +148,6 @@
 
     <!-- modal fim -->
 
-
-
-
-
-
-
-
     <script>
         let sidebar = document.querySelector(".sidebar");
         let closeBtn = document.querySelector("#btn");
@@ -166,13 +159,11 @@
             sidebar.classList.remove("open");
         }
 
-
-
     </script>
 
 
     <script>
-        function abrirModal(){
+        function abrirModal() {
             const modal = document.getElementById('modal_cad')
             modal.classList.add('mostrar');
         }
@@ -182,8 +173,6 @@
             modal.classList.remove('mostrar');
         }
 
-        
-
     </script>
 
 
@@ -191,6 +180,7 @@
     <script src="../js/table.js"></script>
     <script src="../js/theme.js"></script>
     <script src="../js/login.js"></script>
+
 </body>
 
 </html>

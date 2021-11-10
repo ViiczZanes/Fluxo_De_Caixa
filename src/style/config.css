@@ -1,0 +1,33 @@
+body {
+    background: #E4E9F7;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: #E4E9F7;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.home{
+    position: relative;
+    background: #f7f7f7;
+    min-height: 100vh;
+    top: 0;
+    transition: all 0.5s ease;
+    z-index: 2;
+  }
+  
+  
+  
+  /* ------------------------------------------ TopBar config  ------------------------------------------*/
+  .home .top_bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    height: 82px;
+    align-items: center;
+    padding-left: 20px;
+    font-size: 30px;
+}

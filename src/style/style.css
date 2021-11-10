@@ -40,9 +40,6 @@ td,th{
   align-items: center;
   padding-left: 20px;
   font-size: 30px;
-
-
-
   background: #FFFFFF;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
   
@@ -68,18 +65,18 @@ td,th{
 
 #new{ 
   position: relative;
-  width: 93px;
-  height: 40px;
   left: 40px;
   top: 20px;
   margin: 5px;
-  padding: 2px;
+  padding: 8px;
   display: flex;
   text-align: center;
   border-radius: 6px;
   border: none;
   color: white;
   background: linear-gradient(90deg, #025ce3, #4e94fd);
+  font-size: 16px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
 
@@ -137,3 +134,7 @@ td,th{
   display: contents;
 }
 
+.btn-new{
+  text-align: center;
+
+}

@@ -19,28 +19,30 @@
     margin: 16px;
 }
 
-.inputs{
+.inputs-padrao{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
 }
 
-.input{
+.input-padrao{
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 0.5rem;
     font-size: 1.2rem;;
 }
 
-.button{
+.button-padrao{
     padding: 0.5rem 3rem;
     background: #f3f3f3;
     margin-bottom: 2rem;
     border-radius: 10px;
     transition: 300ms ease-in-out;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-button:hover{
+.button-padrao:hover{
     color:white;
     background: rgb(122, 122, 122);
 }

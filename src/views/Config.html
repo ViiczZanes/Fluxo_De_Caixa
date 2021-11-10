@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="../style/login.css">
+    <link rel="stylesheet" href="../style/index.css">
+
     <script src="../js/Cor.js"></script>
 
 
@@ -13,15 +16,37 @@
 </head>
 
 <body>
-    <select name="color" id="changerColor">
-        <option value="azul">azul</option>
-        <option value="verde">verde</option>
-        <option value="cinza_claro">cinza_claro</option>
-        <option value="cinza_escuro">cinza_escuro</option>
-    </select>
 
+    <!--Top Bar-->
 
-    <button onclick="cor.getColor()"></button>
+    <section class="home theme">
+        <div class="top_bar theme">
+            <div>
+                E-Comerce
+            </div>
+            <div class="button_theme">
+                <input type="checkbox" class="checkbox" id="checkbox">
+                <label for="checkbox" class="label_theme theme">
+                    <i class='bx bx-moon'></i>
+                    <i class='bx bx-sun'></i>
+                    <div class="ball"></div>
+                </label>
+            </div>
+        </div>
+
+        <div class="container theme">
+            <div class="box-login">
+                <select name="color" id="changerColor">
+                    <option value="azul">azul</option>
+                    <option value="verde">verde</option>
+                    <option value="cinza_claro">cinza_claro</option>
+                    <option value="cinza_escuro">cinza_escuro</option>
+                </select>
+                <button class="button-padrao" onclick="cor.getColor()">Mudar</button>
+            </div>
+        </div>
+        <script src="../js/theme.js"></script>
+
 </body>
 
 </html>
